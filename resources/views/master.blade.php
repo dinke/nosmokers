@@ -48,8 +48,8 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li @if (Request::path() == '/') class="active" @endif ><a href="{{ url('/')  }}">Home</a></li>
-                <li @if (Request::path() == 'about') class="active" @endif><a href="{{  url('about') }}">About</a></li>
-                <li @if (Request::path() == 'contact') class="active" @endif><a href="{{  url('contact') }}">Contact</a></li>
+                <li @if (Request::path() == 'about') class="active" @endif><a href="{{  url('about') }}">O Nama</a></li>
+                <li @if (Request::path() == 'contact') class="active" @endif><a href="{{  url('contact') }}">Kontakt</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

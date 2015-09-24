@@ -13,17 +13,9 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template @todo put this to separate file -->
-    <style>
-        body {
-            padding-top: 50px;
-        }
-        .starter-template {
-            padding: 40px 15px;
-            text-align: center;
-        }
-    </style>
+    @section('style')
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    @show
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

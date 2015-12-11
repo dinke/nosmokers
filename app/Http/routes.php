@@ -18,12 +18,9 @@ Route::post('contact', 'ContactController@store');
 
 
 //admin part
-// Authentication routes...
-Route::get('admin/', [
-    'middleware' => 'auth',
-    'uses' => 'Admin\HomeController@index'
-]);
+Route::get('admin', 'Admin\HomeController@index');
 
+// Authentication routes...
 Route::get('admin/login', 'Auth\AuthController@getLogin');
 Route::post('admin/login', 'Auth\AuthController@postLogin');
 Route::get('admin/logout', 'Auth\AuthController@getLogout');

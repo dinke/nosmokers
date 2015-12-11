@@ -14,7 +14,7 @@
                     <input type="email" name="email" class="form-control" id="emailField" placeholder="E-mail" value="{{ old('email') }}" /> </div>
                 <div class="form-group">
                     <label for="descField">Vaša poruka</label>
-                    <textarea class="form-control" name="message" rows="10" id="descField" placeholder="Vaša Poruka" value="{{ old('message') }}"></textarea>
+                    <textarea class="form-control" name="message" rows="10" id="descField" placeholder="Vaša Poruka">{{ old('message') }}</textarea>
                 </div>
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
